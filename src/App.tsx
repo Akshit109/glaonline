@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion, useScroll, useSpring } from 'motion/react';
 import { Navbar } from './components/Navbar';
@@ -15,10 +16,13 @@ import { Footer } from './components/Footer';
 import { ApplicationModal } from './components/ApplicationModal';
 import { Chatbot } from './components/Chatbot';
 import { CONTACT_INFO } from './data/universityData';
+import { DirectorMessage } from './components/DirectorMessage';
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedProgramId, setSelectedProgramId] = useState<string | undefined>(undefined);
+  const [selectedProgramId, setSelectedProgramId] = useState<string | undefined>(
+    undefined,
+  );
   const [showMobileStickyCta, setShowMobileStickyCta] = useState(false);
 
   const prefersReducedMotion = useReducedMotion();
@@ -65,6 +69,9 @@ export default function App() {
         <ProgramExplorer onApplyClick={handleApplyClick} />
 
         <UniversityHighlights />
+
+        {/* Director's Message Video */}
+        <DirectorMessage />
 
         <LearningExperience />
 
