@@ -1,0 +1,6 @@
+{
+  "name": "GLA Online — Digital University",
+  "description": "UGC-DEB entitled, NAAC A+ accredited online undergraduate and postgraduate degree programmes from GLA University for 2026 admissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
